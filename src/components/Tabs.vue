@@ -17,15 +17,8 @@ const ReactTab = applyPureReactInVue(Tab);
 
 <template>
   <ReactTabs
-    v-bind="
-      useReactProps(
-        {
-          className: 'flex justify-center',
-          selectedKey: routeTabs?.length ? route.path : undefined,
-        },
-        $attrs,
-      )
-    "
+    className="mb-8"
+    :selectedKey="routeTabs?.length ? route.path : undefined"
   >
     <ReactTab
       v-for="tab in routeTabs"

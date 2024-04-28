@@ -9,7 +9,9 @@ setTimeout(() => {
 <template>
   <div class="text-center">
     <h1>Page2</h1>
-    <NextLink v-if="!bool" href="/#">Link</NextLink>
+    <NextLink v-if="!bool" href="/#">
+      Link1
+    </NextLink>
   </div>
 </template>
 

@@ -12,8 +12,8 @@ const tabs = [
 </script>
 
 <template>
- <div>
-   <Tabs class="mb-8" :routeTabs="tabs" />
+ <div class="text-center">
+   <Tabs :routeTabs="tabs" />
    <NuxtPage
      :transition="{
        name: 'tab',
